@@ -16,6 +16,7 @@
         <result property="id" column="tid"/>
         <result property="name" column="tname"/>
         <!--复杂对象属性，要单独处理。对象：association  集合；collection-->
+        <!--javaType="" 指定属性的类型   ofType="" 获取集合中的泛型信息-->
         <collection property="student" ofType="Student">
             <result property="id" column="sid"/>
             <result property="name" column="sname"/>
